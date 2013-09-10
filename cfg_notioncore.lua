@@ -102,7 +102,7 @@ defbindings("WScreen", {
     kpress("XF86AudioStop", "ioncore.exec('mpc stop')"),
 
     -- Touchpad toggle
-    kpress("XF86TouchpadToggle", "ioncore.exec('/usr/bin/synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')')"),
+    kpress("XF86TouchpadToggle", "ioncore.exec('/usr/bin/synclient TouchpadOff=$(synclient -l | grep -c \"TouchpadOff.*=.*0\")')"),
 })
 
 
