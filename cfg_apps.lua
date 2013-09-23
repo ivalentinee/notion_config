@@ -1,3 +1,4 @@
+
 -- App functions
 function start_tray()
    ioncore.exec('/usr/bin/stalonetray')
@@ -35,7 +36,7 @@ function start_skype()
    ioncore.exec('/usr/bin/skype')
 end
 
-function start_skype()
+function start_pidgin()
    ioncore.exec('/usr/bin/pidgin')
 end
 

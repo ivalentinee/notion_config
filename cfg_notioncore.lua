@@ -112,6 +112,8 @@ defbindings("WScreen", {
 
     -- Touchpad toggle
     kpress("XF86TouchpadToggle", "ioncore.exec('/usr/bin/synclient TouchpadOff=$(synclient -l | grep -c \"TouchpadOff.*=.*0\")')"),
+    -- XScreenSaver
+    kpress("Mod1+Control+L", "ioncore.exec('/usr/bin/xscreensaver-command -lock')"),
 })
 
 
