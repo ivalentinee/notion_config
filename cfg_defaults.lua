@@ -25,6 +25,9 @@ dopath("send_to_ws")
 -- XKB
 --dopath("xkbion")
 
+-- Hide/show tabs
+dopath("min_tabs")
+
 -- "apps" menu
 dopath("cfg_apps")
 
