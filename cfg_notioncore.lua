@@ -383,12 +383,18 @@ function set_screen(side)
    ioncore.restart()
 end
 
+function set_screen_home()
+   ioncore.exec('/usr/bin/xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output LVDS1 --mode 1366x768 --pos 288x1080 --rotate normal --output DP1 --off --output VGA1 --off')
+   ioncore.restart()
+end
+
 -- Screen menu
 defmenu("screen", {
     menuentry("Auto_left",   "set_screen('left-of')"),
     menuentry("Auto_right",  "set_screen('right-of')"),
     menuentry("Auto_top",    "set_screen('above')"),
     menuentry("Auto_bottom", "set_screen('below')"),
+    menuentry("Home",        "set_screen_home()"),
 })
 
 
