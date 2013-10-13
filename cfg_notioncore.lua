@@ -379,14 +379,16 @@ defmenu("sessionmenu", {
 
 
 function set_screen(side)
-   ioncore.exec('/usr/bin/xrandr --output LVDS1 --mode 1366x768 --primary --output HDMI1 --auto --'..side..'-of LVDS1 --output VGA1 --auto --'..side..'-of LVDS1')
+   ioncore.exec('/usr/bin/xrandr --output LVDS1 --mode 1366x768 --primary --output HDMI1 --auto --'..side..' LVDS1 --output VGA1 --auto --'..side..' LVDS1')
    ioncore.restart()
 end
 
 -- Screen menu
 defmenu("screen", {
-    menuentry("Auto_left",      "set_screen('left')"),
-    menuentry("Auto_right",     "set_screen('right')"),
+    menuentry("Auto_left",   "set_screen('left-of')"),
+    menuentry("Auto_right",  "set_screen('right-of')"),
+    menuentry("Auto_top",    "set_screen('above')"),
+    menuentry("Auto_bottom", "set_screen('below')"),
 })
 
 
