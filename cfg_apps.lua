@@ -17,7 +17,7 @@ function start_nm()
 end
 
 function start_mpd()
-   ioncore.exec('/usr/bin/gnome-terminal --role=mpd -e ncmpcpp')
+   ioncore.exec('/usr/bin/x-terminal-emulator --role=mpd -e ncmpcpp')
 end
 
 function start_emacs()
