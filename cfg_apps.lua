@@ -21,7 +21,7 @@ function start_mpd()
 end
 
 function start_emacs()
-   ioncore.exec('/usr/bin/emacs')
+   ioncore.exec('/usr/local/bin/emacs')
 end
 
 function start_dropbox()
