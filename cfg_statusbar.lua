@@ -36,7 +36,7 @@ mod_statusbar.create{
     -- right, respectively, and %systray is a placeholder for system tray
     -- windows and icons.
     --
-   template="[ %date | Batt:%laptopstatus_batterypercent-%laptopstatus_batterytimeleft ] %systray_xxkb %filler -%wsname- [|%systray|]",
+   template="[ %date | Batt:%laptopstatus_batterypercent-%laptopstatus_batterytimeleft | CPU: %laptopstatus_cpuspeed ] %systray_xxkb %filler -%wsname- [|%systray|]",
     --template="[ %date || load:% %>load || mail:% %>mail_new/%>mail_total ] %filler%systray",
     --template="[ %date || load: %05load_1min || mail: %02mail_new/%02mail_total ] %filler%systray",
 }
