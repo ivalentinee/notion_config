@@ -25,6 +25,9 @@ dopath("send_to_ws")
 -- XKB
 --dopath("xkbion")
 
+-- screenshots
+dopath("screenshot")
+
 -- Hide/show tabs
 dopath("min_tabs")
 
