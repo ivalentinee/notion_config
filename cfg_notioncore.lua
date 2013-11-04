@@ -119,6 +119,7 @@ defbindings("WScreen", {
     -- Screenshots
     kpress("Print", "make_screenshot()"),
     kpress("Mod1+Print", "make_current_window_screenshot()"),
+    kpress("Mod4+Print", "make_current_window_screenshot_with_windowname()")
 })
 
 
