@@ -105,10 +105,10 @@ defbindings("WScreen", {
     kpress("XF86AudioMute", "ioncore.exec('amixer sset Master toggle')"),
 
     -- MPD keybindings
-    kpress("XF86AudioNext", "ioncore.exec('mpc next')"),
-    kpress("XF86AudioPrev", "ioncore.exec('mpc prev')"),
-    kpress("XF86AudioPlay", "ioncore.exec('mpc toggle')"),
-    kpress("XF86AudioStop", "ioncore.exec('mpc stop')"),
+    kpress("XF86AudioNext", "ioncore.exec('/usr/bin/mpc next')"),
+    kpress("XF86AudioPrev", "ioncore.exec('/usr/bin/mpc prev')"),
+    kpress("XF86AudioPlay", "ioncore.exec('/usr/bin/mpc toggle')"),
+    kpress("XF86AudioStop", "ioncore.exec('/usr/bin/mpc stop')"),
 
     -- Touchpad toggle
     kpress("XF86TouchpadToggle", "ioncore.exec('/usr/bin/synclient TouchpadOff=$(synclient -l | grep -c \"TouchpadOff.*=.*0\")')"),
